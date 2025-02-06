@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Blog Page | Myown Blog Website | TailwindCSS</title>
+  </head>
+  <body class="h-screen max-w-full ">
+    <div class="w-[100%] min-h-screen bg-slate-900 ">
+      <!-- ========== Start Navbar Section ========== -->
+      <nav class="w-full py-4 px-10 bg-slate-900">
+        <div class="container flex justify-between">
+          <div class="flex space-x-20 items-center justify-center">
+            <a href="#">
+              <img src="./images/Logo.png" alt="" class="w-40" />
+            </a>
+            <div
+              class="flex items-center justify-center space-x-7 text-md text-slate-300 font-medium"
+            >
+              <a
+                href="./index.html"
+                class="hover:text-sky-400 hover:scale-105 transition duration-150"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="hover:text-sky-400 hover:scale-105 transition duration-150"
+                >About</a
+              >
+              <a
+                href="#"
+                class="hover:text-sky-400 hover:scale-105 transition duration-150"
+                >Contact</a
+              >
+              <a
+                href="#"
+                class="hover:text-sky-400 hover:scale-105 transition duration-150"
+                >Policy</a
+              >
+            </div>
+          </div>
+
+          <div class="flex space-x-7 items-center justify-center">
+            <div class="relative">
+              <input
+                type="text"
+                name="userSearch"
+                id="userSearch"
+                placeholder="Search..."
+                class="px-6 pl-14 py-3 bg-white focus:outline-none rounded-full w-60 h-10"
+              />
+              <i
+                class="fas fa-search absolute text-slate-900 top-[50%] left-[8%] -translate-y-[50%] text-xl cursor-pointer active:scale-95 transition duration-150"
+              ></i>
+            </div>
+            <a
+              href="#"
+              class="text-sky-400 hover:text-slate-300 hover:scale-105 transition duration-150"
+            >
+              <span class="inline mr-2">
+                <i class="fas fa-user"></i>
+              </span>
+              Login / SignUp</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- ========== End Navbar Section ========== -->
+
+        <!-- ========== Start Main Container Section ========== -->
+        <main class="py-12 px-10">
+            <div class="container mx-auto flex">
+                <div class="w-9/12 mr-4 space-y-4">
+                    <div class="bg-slate-800 bg-opacity-80 shadow-sm rounded-xl">
+                        <!-- Main Header -->
+                        <div class="flex justify-between items-center p-4 py-4 px-4">
+                          <h2 class="text-xl font-bold text-white uppercase">Buisness</h2>
+                          <div
+                            class="text-base font-bold text-slate-800 bg-white px-4 py-2 rounded-md cursor-pointer border border-2 border-slate-800 hover:bg-sky-400 transition duration-600 hover:-translate-y-1 active:border-sky-400 active:bg-slate-800 active:text-sky-400"
+                          >
+                            Next <i class="fas fa-arrow-circle-right ml-2"></i>
+                          </div>
+                        </div>
+                        <!-- Image -->
+                        <div
+                          class="flex items-center justify-center border border-cyan-400 rounded-xl mt-3"
+                        >
+                          <img
+                            src="images\4175.jpg_wh860.jpg"
+                            alt=""
+                            class="rounded-xl w-full"
+                          />
+                        </div>
+                        <!-- Post Title -->
+                        <div class="px-4 mt-5 pb-1 pt-3">
+                          <h2 class="font-bold text-2xl text-white">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Aspernatur, repudiandae?
+                          </h2>
+                        </div>
+                        <!-- Paragraph -->
+                        <div class="px-4 py-4 space-y-2">
+                          <p class="text-slate-300 line-clamp-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Velit, doloremque provident veritatis recusandae perferendis
+                            architecto harum soluta voluptas voluptatum aperiam magnam
+                            unde qui consequuntur! Eos, adipisci corrupti nobis assumenda
+                          </p>
+                          <p class="text-slate-300 line-clamp-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Velit, doloremque provident veritatis recusandae perferendis
+                            architecto harum soluta voluptas voluptatum aperiam magnam
+                            unde qui consequuntur! Eos, adipisci corrupti nobis assumenda
+                          </p>
+                        </div>
+
+                        <!-- Quatation Box -->
+                        <div class="px-4 py-4">
+                            <div class="px-5 py-4 bg-slate-500 bg-opacity-20 text-white font-light rounded-lg">
+                                <p class="text-sm"><span><i class="fas fa-quote-left mr-0.5 text-lg"></i></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla earum ratione laborum deserunt maiores deleniti id aliquid tempora alias, quas harum cumque blanditiis doloremque quam repellat eaque eligendi, sapiente officiis?<span><i class="fas fa-quote-right ml-1 text-lg"></i></span></p>
+                            </div>
+                        </div>
+
+                        <!-- User List -->
+                         <div class="px-4 py-4">
+                            <ul class="flex flex-col items-start justify-center list-none text-slate-300">
+                                <li><span>
+                                    <i class="fas fa-arrow-right mr-3"></i>
+                                </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, aliquam.</li>
+                                <li><span>
+                                    <i class="fas fa-arrow-right mr-3"></i>
+                                </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, aliquam.</li>
+                                <li><span>
+                                    <i class="fas fa-arrow-right mr-3"></i>
+                                </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, aliquam.</li>
+                             </ul>
+                         </div>
+
+                        <!-- Paragraph -->
+                        <div class="px-4 py-4 space-y-2 text-slate-300">
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis in nisi voluptas? Numquam vitae reiciendis temporibus, quas aliquam dolorum doloribus autem dolore id fuga quam quod vel nulla dolor sit sequi quisquam unde saepe at? Optio laudantium modi corrupti deserunt id consectetur! Corporis illum officia tenetur veniam ad quas voluptates fugiat ullam. Perferendis in, sapiente earum laudantium explicabo, maxime aperiam consectetur incidunt minus debitis iusto eos numquam pariatur! Ipsum perferendis vel at nobis, minima nostrum ullam non officia quas harum corporis id expedita dignissimos, itaque deserunt totam iusto? Recusandae maxime eveniet consequatur tenetur, voluptatem quia fugit adipisci cum non eum.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sint quas tempore nihil repellendus ab unde. Quasi magnam eaque voluptatum! Ex, nulla libero quo excepturi ut ab nemo dolores doloremque.</p>
+                          </div>
+
+                        <!-- User & Time -->
+                        <div
+                          class="px-4 py-3 pb-4 flex items-center justify-start text-slate-300 space-x-4"
+                        >
+                          <div class="flex space-x-2 text-sm items-center justify-start">
+                            <i class="fa-regular fa-user"></i>
+                            <p class="text-base">Anonymous</p>
+                          </div>
+                          <div class="flex space-x-2 text-sm items-center justify-start">
+                            <i class="fa-regular fa-clock"></i>
+                            <p class="text-base">August 27, 2024</p>
+                          </div>
+                        </div>
+                      </div>
+                    
+                    <div class="bg-slate-800 bg-opacity-80 shadow-sm rounded-xl">
+                        <!-- Main Heading -->
+                        <div class="px-4 py-4 space-y-3">
+                            <h2 class="text-lg font-bold text-white uppercase">Post A Comment</h2>
+                            <p class="text-xs font-light text-white ">12 Comments.</p>
+                        </div>
+                        <!-- User Comments -->
+                         <div class="px-4 py-4 flex flex-col space-y-5">
+                            <!-- User - 1 -->
+                            <div>
+                            <div class="w-full flex items-start justify-center">
+                                <!-- User Profile -->
+                                 <div class="w-1/12">
+                                    <div class="flex items-center justify-center text-5xl text-slate-400">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                 </div>
+                                 <!-- User Details  -->
+                                <div class="w-11/12">
+                                    <div class="flex flex-col items-start justify-start">
+                                        <!-- User Name -->
+                                        <h4 class="text-xl text-white font-bold">Mehdiali Kadiwala</h4>
+                                        <!-- Comment Date -->
+                                        <p class="text-xs text-slate-400">5th September, 2024 at 10:12 PM</p>
+                                        <!-- Actual Comment -->
+                                         <p class="text-base text-white mt-2 line-clamp-2"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod culpa delectus aliquid non at, dolor amet maxime a eius fugiat ipsa laboriosam distinctio iste numquam doloremque nam illum odio quo quia perspiciatis temporibus quas! Voluptatum numquam dolores corrupti eaque!</p>
+                                        
+                                         <!-- Buttons -->
+                                          <div class="flex items-center justify-center mt-3 text-sm space-x-3 cursor-pointer">
+                                            <div class="bg-slate-400 px-3 rounded-full py-1">Reply</div>
+                                            <div class="bg-slate-600 px-3 rounded-full text-slate-900 py-1">Delete</div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full h-0.5 rounded-full bg-slate-400 opacity-30 mt-4"></div>
+                            </div>
+                            <!-- User - 1 -->
+                            <div>
+                            <div class="w-full flex items-start justify-center">
+                                <!-- User Profile -->
+                                 <div class="w-1/12">
+                                    <div class="flex items-center justify-center text-5xl text-slate-400">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                 </div>
+                                 <!-- User Details  -->
+                                <div class="w-11/12">
+                                    <div class="flex flex-col items-start justify-start">
+                                        <!-- User Name -->
+                                        <h4 class="text-xl text-white font-bold">Mehdiali Kadiwala</h4>
+                                        <!-- Comment Date -->
+                                        <p class="text-xs text-slate-400">5th September, 2024 at 10:12 PM</p>
+                                        <!-- Actual Comment -->
+                                         <p class="text-base text-white mt-2 line-clamp-2"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod culpa delectus aliquid non at, dolor amet maxime a eius fugiat ipsa laboriosam distinctio iste numquam doloremque nam illum odio quo quia perspiciatis temporibus quas! Voluptatum numquam dolores corrupti eaque!</p>
+                                        
+                                         <!-- Buttons -->
+                                          <div class="flex items-center justify-center mt-3 text-sm space-x-3 cursor-pointer">
+                                            <div class="bg-slate-400 px-3 rounded-full py-1">Reply</div>
+                                            <div class="bg-slate-600 px-3 rounded-full text-slate-900 py-1">Delete</div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full h-0.5 rounded-full bg-slate-400 opacity-30 mt-4"></div>
+                            </div>
+                            <!-- User - 1 -->
+                            <div>
+                            <div class="w-full flex items-start justify-center">
+                                <!-- User Profile -->
+                                 <div class="w-1/12">
+                                    <div class="flex items-center justify-center text-5xl text-slate-400">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                 </div>
+                                 <!-- User Details  -->
+                                <div class="w-11/12">
+                                    <div class="flex flex-col items-start justify-start">
+                                        <!-- User Name -->
+                                        <h4 class="text-xl text-white font-bold">Mehdiali Kadiwala</h4>
+                                        <!-- Comment Date -->
+                                        <p class="text-xs text-slate-400">5th September, 2024 at 10:12 PM</p>
+                                        <!-- Actual Comment -->
+                                         <p class="text-base text-white mt-2 line-clamp-2"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod culpa delectus aliquid non at, dolor amet maxime a eius fugiat ipsa laboriosam distinctio iste numquam doloremque nam illum odio quo quia perspiciatis temporibus quas! Voluptatum numquam dolores corrupti eaque!</p>
+                                        
+                                         <!-- Buttons -->
+                                          <div class="flex items-center justify-center mt-3 text-sm space-x-3 cursor-pointer">
+                                            <div class="bg-slate-400 px-3 rounded-full py-1">Reply</div>
+                                            <div class="bg-slate-600 px-3 rounded-full text-slate-900 py-1">Delete</div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full h-0.5 rounded-full bg-slate-400 opacity-30 mt-4"></div>
+                            </div>
+                         </div>
+                        
+                        <!-- Add Comments -->
+                         <div class="px-4 py-4">
+                            <h3 class="text-xl font-bold text-slate-400">Comment</h3>
+                            <textarea name="userComment" id="userComment" placeholder="Please write your comment here." class="w-full px-2 py-2 bg-transparent border-4 border-slate-400 mt-4 rounded-xl placeholder:text-slate-400 text-white"></textarea>
+                            <div class="mt-3">
+                                <div class="inline px-4 py-1 rounded-full bg-cyan-400 text-slate-900 font-bold cursor-pointer">Submit</div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+
+                <!-- 3rd Container -->
+          <div class="w-3/12 mr-4 space-y-4">
+            <!-- Social Plugins -->
+            <div
+              class="bg-slate-800 bg-opacity-80 shadow-sm rounded-xl px-4 py-4"
+            >
+              <div class="w-full">
+                <h3 class="text-base text-white font-semibold">
+                  Social Plugins
+                </h3>
+              </div>
+              <div
+                class="w-full flex items-center justify-start text-slate-300 text-xl mt-4 space-x-4 transition-all duration-200"
+              >
+                <a
+                  href="https://www.facebook.com/mehdiali.mk/"
+                  class="hover:text-cyan-400 hover:-translate-y-1 transition-all duration-150 active:translate-y-0"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/mehdiali-mk/"
+                  class="hover:text-cyan-400 hover:-translate-y-1 transition-all duration-150 active:translate-y-0"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a
+                  href="https://twitter.com/mehdiali_mk"
+                  class="hover:text-cyan-400 hover:-translate-y-1 transition-all duration-150 active:translate-y-0"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/mehdiali_mk/"
+                  class="hover:text-cyan-400 hover:-translate-y-1 transition-all duration-150 active:translate-y-0"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                  href="https://github.com/mehdiali-mk/"
+                  class="hover:text-cyan-400 hover:-translate-y-1 transition-all duration-150 active:translate-y-0"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Categories -->
+            <div class="bg-slate-800 bg-opacity-80 shadow-sm rounded-xl p-4">
+                <h3 class="text-base text-white font-semibold">Categories</h3>
+                <div
+                  class="mt-4 flex flex-col items-center justify-center space-y-1"
+                >
+                  <div
+                    class="w-full flex items-center justify-between text-slate-300 hover:text-white transition duration-200 cursor-pointer hover:translate-x-1 hover:-translate-y-0 group active:translate-x-0"
+                  >
+                    <div class="flex items-center justify-center space-x-2">
+                      <div class="text-slate-300 group-hover:text-sky-400">
+                        <i class="fas fa-folder-open"></i>
+                      </div>
+                      <h4 class="text-sm font-bold">HTML</h4>
+                    </div>
+                    <p class="text-sm font-bold">(12)</p>
+                  </div>
+                  <div
+                    class="w-full flex items-center justify-between text-slate-300 hover:text-white transition duration-200 cursor-pointer hover:translate-x-1 hover:-translate-y-0 group active:translate-x-0"
+                  >
+                    <div class="flex items-center justify-center space-x-2">
+                      <div class="text-slate-300 group-hover:text-sky-400">
+                        <i class="fas fa-folder-open"></i>
+                      </div>
+                      <h4 class="text-sm font-bold">CSS</h4>
+                    </div>
+                    <p class="text-sm font-bold">(9)</p>
+                  </div>
+                  <div
+                    class="w-full flex items-center justify-between text-slate-300 hover:text-white transition duration-200 cursor-pointer hover:translate-x-1 hover:-translate-y-0 group active:translate-x-0"
+                  >
+                    <div class="flex items-center justify-center space-x-2">
+                      <div class="text-slate-300 group-hover:text-sky-400">
+                        <i class="fas fa-folder-open"></i>
+                      </div>
+                      <h4 class="text-sm font-bold">JavaScript</h4>
+                    </div>
+                    <p class="text-sm font-bold">(11)</p>
+                  </div>
+                  <div
+                    class="w-full flex items-center justify-between text-slate-300 hover:text-white transition duration-200 cursor-pointer hover:translate-x-1 hover:-translate-y-0 group active:translate-x-0"
+                  >
+                    <div class="flex items-center justify-center space-x-2">
+                      <div class="text-slate-300 group-hover:text-sky-400">
+                        <i class="fas fa-folder-open"></i>
+                      </div>
+                      <h4 class="text-sm font-bold">BootStrap</h4>
+                    </div>
+                    <p class="text-sm font-bold">(3)</p>
+                  </div>
+                  <div
+                    class="w-full flex items-center justify-between text-slate-300 hover:text-white transition duration-200 cursor-pointer hover:translate-x-1 hover:-translate-y-0 group active:translate-x-0"
+                  >
+                    <div class="flex items-center justify-center space-x-2">
+                      <div class="text-slate-300 group-hover:text-sky-400">
+                        <i class="fas fa-folder-open"></i>
+                      </div>
+                      <h4 class="text-sm font-bold">TailwindCSS</h4>
+                    </div>
+                    <p class="text-sm font-bold">(6)</p>
+                  </div>
+                  <div
+                    class="w-full flex items-center justify-between text-slate-300 hover:text-white transition duration-200 cursor-pointer hover:translate-x-1 hover:-translate-y-0 group active:translate-x-0"
+                  >
+                    <div class="flex items-center justify-center space-x-2">
+                      <div class="text-slate-300 group-hover:text-sky-400">
+                        <i class="fas fa-folder-open"></i>
+                      </div>
+                      <h4 class="text-sm font-bold">React.JS</h4>
+                    </div>
+                    <p class="text-sm font-bold">(9)</p>
+                  </div>
+                  <div
+                    class="w-full flex items-center justify-between text-slate-300 hover:text-white transition duration-200 cursor-pointer hover:translate-x-1 hover:-translate-y-0 group active:translate-x-0"
+                  >
+                    <div class="flex items-center justify-center space-x-2">
+                      <div class="text-slate-300 group-hover:text-sky-400">
+                        <i class="fas fa-folder-open"></i>
+                      </div>
+                      <h4 class="text-sm font-bold">Web Components</h4>
+                    </div>
+                    <p class="text-sm font-bold">(6)</p>
+                  </div>
+                  <div
+                    class="w-full flex items-center justify-between text-slate-300 hover:text-white transition duration-200 cursor-pointer hover:translate-x-1 hover:-translate-y-0 group active:translate-x-0"
+                  >
+                    <div class="flex items-center justify-center space-x-2">
+                      <div class="text-slate-300 group-hover:text-sky-400">
+                        <i class="fas fa-folder-open"></i>
+                      </div>
+                      <h4 class="text-sm font-bold">Python Script</h4>
+                    </div>
+                    <p class="text-sm font-bold">(15)</p>
+                  </div>
+                </div>
+              </div>
+            <!-- Popular Post -->
+            <div class="bg-slate-800 bg-opacity-80 shadow-sm rounded-xl p-4">
+              <h3 class="text-base text-white font-semibold">Popular Post</h3>
+              <div class="mt-3 flex flex-col space-y-2">
+                <!--1st Post  -->
+                <div
+                  class="flex space-x-2 items-center justify-start text-slate-300 hover:text-white group transition duration-200 cursor-pointer hover:translate-x-1 hover:-translate-y-0 active:translate-x-0"
+                >
+                  <div
+                    class="flex items-center justify-center text-4xl text-slate-300 group-hover:text-sky-400"
+                  >
+                    <i class="fa-brands fa-html5"></i>
+                  </div>
+                  <div class="flex flex-col">
+                    <h4 class="font-bold text-base line-clamp-1">
+                      HTML is the basic structure.
+                    </h4>
+                    <div
+                      class="flex space-x-1 text-sm items-center justify-start"
+                    >
+                      <i class="fa-regular fa-clock"></i>
+                      <p class="text-sm">August 27, 2024</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- 2nd Post -->
+                <div
+                  class="flex space-x-2 items-center justify-start text-slate-300 hover:text-white group transition duration-200 cursor-pointer hover:translate-x-1 hover:-translate-y-0 active:translate-x-0"
+                >
+                  <div
+                    class="flex items-center justify-center text-4xl text-slate-300 group-hover:text-sky-400"
+                  >
+                    <i class="fa-brands fa-css3"></i>
+                  </div>
+                  <div class="flex flex-col">
+                    <h4 class="font-bold text-base line-clamp-1">
+                      How to center a div.
+                    </h4>
+                    <div
+                      class="flex space-x-1 text-sm items-center justify-start"
+                    >
+                      <i class="fa-regular fa-clock"></i>
+                      <p class="text-sm">August 27, 2024</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3rd Post -->
+                <div
+                  class="flex space-x-2 items-center justify-start text-slate-300 hover:text-white group transition duration-200 cursor-pointer hover:translate-x-1 hover:-translate-y-0 active:translate-x-0"
+                >
+                  <div
+                    class="flex items-center justify-center text-4xl text-slate-300 group-hover:text-sky-400"
+                  >
+                    <i class="fa-brands fa-js"></i>
+                  </div>
+                  <div class="flex flex-col">
+                    <h4 class="font-bold text-base line-clamp-1">
+                      What is DOM manipulation.
+                    </h4>
+                    <div
+                      class="flex space-x-1 text-sm items-center justify-start"
+                    >
+                      <i class="fa-regular fa-clock"></i>
+                      <p class="text-sm">August 27, 2024</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- 4th Post  -->
+                <div
+                  class="flex space-x-2 items-center justify-start text-slate-300 hover:text-white group transition duration-200 cursor-pointer hover:translate-x-1 hover:-translate-y-0 active:translate-x-0"
+                >
+                  <div
+                    class="flex items-center justify-center text-4xl text-slate-300 group-hover:text-sky-400"
+                  >
+                    <i class="fa-brands fa-python"></i>
+                  </div>
+                  <div class="flex flex-col">
+                    <h4 class="font-bold text-base line-clamp-1">
+                      Discover the Python libraries.
+                    </h4>
+                    <div
+                      class="flex space-x-1 text-sm items-center justify-start"
+                    >
+                      <i class="fa-regular fa-clock"></i>
+                      <p class="text-sm">August 27, 2024</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- 5th Post -->
+                <div
+                  class="flex space-x-2 items-center justify-start text-slate-300 hover:text-white group transition duration-200 cursor-pointer hover:translate-x-1 hover:-translate-y-0 active:translate-x-0"
+                >
+                  <div
+                    class="flex items-center justify-center text-4xl text-slate-300 group-hover:text-sky-400"
+                  >
+                    <i class="fa-brands fa-java"></i>
+                  </div>
+                  <div class="flex flex-col">
+                    <h4 class="font-bold text-base line-clamp-1">
+                      Know the power of OOPS
+                    </h4>
+                    <div
+                      class="flex space-x-1 text-sm items-center justify-start"
+                    >
+                      <i class="fa-regular fa-clock"></i>
+                      <p class="text-sm">August 27, 2024</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- 6th Post -->
+                <div
+                  class="flex space-x-2 items-center justify-start text-slate-300 hover:text-white group transition duration-200 cursor-pointer hover:translate-x-1 hover:-translate-y-0 active:translate-x-0"
+                >
+                  <div
+                    class="flex items-center justify-center text-4xl text-slate-300 group-hover:text-sky-400"
+                  >
+                    <i class="fa-brands fa-react"></i>
+                  </div>
+                  <div class="flex flex-col">
+                    <h4 class="font-bold text-base line-clamp-1">
+                      Dynamic React components.
+                    </h4>
+                    <div
+                      class="flex space-x-1 text-sm items-center justify-start"
+                    >
+                      <i class="fa-regular fa-clock"></i>
+                      <p class="text-sm">August 27, 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tags -->
+            <div class="bg-slate-800 bg-opacity-80 shadow-sm rounded-xl p-4">
+              <div class="w-full">
+                <h3 class="text-base text-white font-semibold">Tags</h3>
+              </div>
+              <div
+                class="w-full mt-4 flex flex-wrap items-center justify-start text-slate-300 text-sm cursor-pointer gap-3"
+              >
+                <p
+                  class="border border-slate-300 px-4 py-1 rounded-full hover:border-cyan-400 hover:text-white"
+                >
+                  HTML
+                </p>
+                <p
+                  class="border border-slate-300 px-4 py-1 rounded-full hover:border-cyan-400 hover:text-white"
+                >
+                  CSS
+                </p>
+                <p
+                  class="border border-slate-300 px-4 py-1 rounded-full hover:border-cyan-400 hover:text-white"
+                >
+                  JavaScript
+                </p>
+                <p
+                  class="border border-slate-300 px-4 py-1 rounded-full hover:border-cyan-400 hover:text-white"
+                >
+                  React
+                </p>
+                <p
+                  class="border border-slate-300 px-4 py-1 rounded-full hover:border-cyan-400 hover:text-white"
+                >
+                  Java
+                </p>
+                <p
+                  class="border border-slate-300 px-4 py-1 rounded-full hover:border-cyan-400 hover:text-white"
+                >
+                  Python
+                </p>
+                <p
+                  class="border border-slate-300 px-4 py-1 rounded-full hover:border-cyan-400 hover:text-white"
+                >
+                  Tailwind
+                </p>
+                <p
+                  class="border border-slate-300 px-4 py-1 rounded-full hover:border-cyan-400 hover:text-white"
+                >
+                  Bootstrap
+                </p>
+              </div>
+            </div>
+          </div>
+            </div>
+        </main>
+  </body>
+</html>

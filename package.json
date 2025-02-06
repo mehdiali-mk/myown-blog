@@ -1,0 +1,16 @@
+{
+  "name": "myown-blog",
+  "version": "1.0.0",
+  "description": "This repository contains all the required files to build a Blog website using HTML, CSS, JavaScript and TailwindCSS.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./css/style.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}
